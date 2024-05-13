@@ -3,9 +3,12 @@
     <div class="row">
       <div class="col-lg-12">
         <h2 class="text-center my-4">RIWAYAT KUNJUNGAN</h2>
-        <div class="my-3">
-          <input type="search" class="form-control form-control-lg rounded-5" placeholder="Filter..." />
-        </div>
+        <form @submit.prevent="getPengunjung">
+          <div class="my-3">
+            <input v-model="keyword" type="search" class="form-control form-control-lg rounded-5" placeholder="Filter..." />
+          </div>
+        </form>
+        
         <div class="my-3 text-muted">menampilkan {{ visitors.length }} dari {{ jumlah }}</div>
         <table class="table">
           <thead>
