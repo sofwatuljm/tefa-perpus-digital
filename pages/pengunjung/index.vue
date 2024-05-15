@@ -39,6 +39,15 @@
 </template>
 
 <script setup>
+useHead({
+  title:"PERPUS DIGITAL",
+  meta: [
+    {
+      name:"description",
+      content:"halaman riwayat kunjungan",
+    }
+  ]
+})
 const supabase = useSupabaseClient();
 
 const keyword = ref([]);
