@@ -59,7 +59,7 @@ const jumlah = ref([]);
 const getPengunjung = async () => {
   const { data, error } = await supabase.from("pengunjung")
   .select(`*, keanggotaan(*), keperluan(*)`)
-  .ilike('nama', `%${keyword.value}`)
+  .ilike('nama', `%${keyword.value}%`)
   .order("id", {ascending: false});
   if (data) visitors.value = data;
 };
