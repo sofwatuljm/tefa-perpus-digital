@@ -92,19 +92,19 @@ onMounted(() =>{
 }
 
 .card.bg-pengunjung {
-    background-image: url("../assets/img/bg-kunjungan.webp");
+    background-image: url("../assets/img/kunjungan.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: black;
-    opacity: 50%;
+    
 }
 
 .card.bg-buku {
-    background: url("../assets/img/bg-buku.webp") no-repeat center center;
+    background: url("../assets/img/caribuku.webp") no-repeat center center;
     background-size: cover;
     color: black;
-    opacity: 50%;
+   
 }
 
 .card.pengunjung {
