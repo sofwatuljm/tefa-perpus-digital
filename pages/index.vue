@@ -106,6 +106,7 @@ onMounted(() =>{
 
 .card.pengunjung {
     background-color: #EDE76E;
+    color: black;
 
 }
 .card.buku {
