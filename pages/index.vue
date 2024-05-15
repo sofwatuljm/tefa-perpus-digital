@@ -51,6 +51,15 @@
 </template>
 
 <script setup>
+useHead({
+  title:"PERPUS DIGITAL",
+  meta: [
+    {
+      name:"description",
+      content:"halaman menu",
+    }
+  ]
+})
 const supabase = useSupabaseClient();
 
 const banyakP = ref(0);
@@ -80,7 +89,7 @@ onMounted(() =>{
 }
 
 .card.bg-pengunjung {
-    background-image: url("../assets/img/bg-kunjungan1.webp");
+    background-image: url("../assets/img/bg-kunjungan.webp");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -89,7 +98,7 @@ onMounted(() =>{
 }
 
 .card.bg-buku {
-    background: url("../assets/img/bg-buku1.webp") no-repeat center center;
+    background: url("../assets/img/bg-buku.webp") no-repeat center center;
     background-size: cover;
     color: black;
     opacity: 50%;
