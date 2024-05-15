@@ -32,6 +32,15 @@
 </template>
 
 <script setup>
+useHead({
+  title:"PERPUS DIGITAL",
+  meta: [
+    {
+      name:"description",
+      content:"halaman detail buku",
+    }
+  ]
+})
 const supabase = useSupabaseClient()
 
 const books = ref([])
